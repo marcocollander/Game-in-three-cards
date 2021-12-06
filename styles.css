@@ -8,7 +8,6 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #333;
-  overflow: hidden;
 }
 
 .cards {
@@ -25,6 +24,45 @@ body {
   border-radius: 15px;
 }
 
+.card.rotated {
+  transform: rotateY(180deg);
+  transition: 0.3s linear;
+  background-image: url('images/card-game-48983_640.png');
+}
+
+.card.reverse-rotated {
+  transform: rotateY(180deg);
+  transition: 0.3s linear;
+}
+
+.sort {
+  animation: sort 0.3s linear both;
+}
+
+.reverse-sort {
+  animation: reverse-sort 0.3s linear both;
+}
+
+@keyframes sort {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes reverse-sort {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 div:nth-child(1) {
   background-image: url('images/diamonds-884199_640.png');
 }
@@ -37,8 +75,12 @@ div:nth-child(3) {
   background-image: url('images/spades-884203_640.png');
 }
 
-.header-section {
+section .header-section {
   margin-top: 30px;
+}
+
+.header-section {
+  margin-bottom: 50px;
   text-align: center;
   padding: 20px;
 }
@@ -52,6 +94,58 @@ h3 {
   font-weight: normal;
 }
 
+.buttons-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-section button {
+  margin-right: 30px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.form-item {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-item label {
+  display: inline-block;
+  width: 80px;
+}
+
+.form-item input {
+  font-size: 20px;
+}
+
+.form-item button {
+  padding: 10px 20px;
+}
+
 button {
   padding: 10px 20px;
+  color: #333;
+  font-size: 20px;
 }
