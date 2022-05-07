@@ -1,11 +1,12 @@
 .header {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   &__heading {
+    margin-top: 10px;
     font-weight: normal;
-    
   }
 }

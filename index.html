@@ -43,14 +43,16 @@
     </section>
 
     <section class="game__buttons">
-      <button class="game__button" type="button">Start</button>
-      <button class="game__button" type="reset">Reset</button>
+      <button class="game__buttons-item" type="button">Start</button>
+      <button class="game__buttons-item" type="reset">Reset</button>
     </section>
 
     <form class="game__results">
-      <label for="Wynik">Wynik</label><input type="text" />
-      <label for="Ilość prób">Ilość prób</label><input type="text" />
-      <input type="submit" value="Wyślij" />
+      <label for="result">Wynik: </label><br>
+      <input class="game__results-in" type="text" id="result" /><br>
+      <label for="quantum">Ilość prób: </label><br>
+      <input class="game__results-in" type="text" id="quantum" /><br>
+      <input class="game__results-in" type="submit" value="Wyślij" />
     </form>
   </main>
 </body>
