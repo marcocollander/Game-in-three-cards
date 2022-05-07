@@ -1,0 +1,15 @@
+.game {
+  display: flex;
+  flex-direction: column;
+
+  &__cards {
+    width: 100vw;
+    display: flex;
+
+    &-item {
+      
+    }
+  }
+
+
+}
