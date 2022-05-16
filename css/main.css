@@ -81,6 +81,11 @@ body {
           justify-content: space-evenly;
 }
 
+.game__images {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
 .game__buttons {
   width: 60%;
   display: -webkit-box;
@@ -105,7 +110,25 @@ body {
 }
 
 .rotated {
-  -webkit-transform: rotateY(100deg) perspective(100px);
-          transform: rotateY(100deg) perspective(100px);
+  -webkit-animation: dispay 1s;
+          animation: dispay 1s;
+}
+
+@-webkit-keyframes display {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes display {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

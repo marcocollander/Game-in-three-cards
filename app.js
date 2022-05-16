@@ -7,6 +7,7 @@ console.log(cards);
 btnStart.addEventListener('click', () => {
   for (const card of cards) {
     card.classList.add('rotated');
+    card.setAttribute('src', './images/card-back.png');
   }
 
   // cards[0].classList.toggle('sort');
@@ -20,7 +21,11 @@ btnStart.addEventListener('click', () => {
 btnReset.addEventListener('click', () => {
   for (const card of cards) {
     card.classList.remove('rotated');
+    // card.setAttribute('src', './images/card-back.png');
   }
+  cards[0].setAttribute('src', './images/diamonds-884199_640.png');
+  cards[1].setAttribute('src', './images/hearts-884201_640.png');
+  cards[2].setAttribute('src', './images/spades-884203_640.png');
 });
 
 // for (const card of cards) {

@@ -11,6 +11,10 @@
     justify-content: space-evenly;
   }
 
+  &__images {
+    transition: 0.8s;
+  }
+
   &__buttons {
     width: 60%;
     display: flex;
@@ -32,5 +36,15 @@
 }
 
 .rotated {
-  transform: rotateY(100deg) perspective(100px);
+  animation: dispay 1s;
+}
+
+@keyframes display {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
