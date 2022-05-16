@@ -103,4 +103,9 @@ body {
 .game__results-in {
   margin-bottom: 20px;
 }
+
+.rotated {
+  -webkit-transform: rotateY(100deg) perspective(100px);
+          transform: rotateY(100deg) perspective(100px);
+}
 /*# sourceMappingURL=main.css.map */

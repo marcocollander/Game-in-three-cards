@@ -30,3 +30,7 @@
     }
   }
 }
+
+.rotated {
+  transform: rotateY(100deg) perspective(100px);
+}
