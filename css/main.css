@@ -3,8 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -20,16 +19,13 @@ body {
 .nav {
   position: relative;
 }
-
 .nav__list {
   display: none;
   list-style: none;
 }
-
 .nav__list-link {
   text-decoration: none;
 }
-
 .nav__button {
   position: absolute;
   right: 0;
@@ -37,90 +33,48 @@ body {
 
 .header {
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .header__heading {
   margin-top: 10px;
   font-weight: normal;
 }
 
 .game {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .game__cards {
   margin-top: 40px;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .game__images {
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .game__buttons {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   margin-top: 50px;
 }
-
 .game__buttons-item {
   padding: 5px 15px;
 }
-
 .game__results {
   margin-top: 30px;
 }
-
 .game__results-in {
   margin-bottom: 20px;
 }
 
 .rotated {
-  -webkit-animation: dispay 1s;
-          animation: dispay 1s;
-}
-
-@-webkit-keyframes display {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+  animation: dispay 1s;
 }
 
 @keyframes display {
@@ -131,4 +85,5 @@ body {
     opacity: 0;
   }
 }
+
 /*# sourceMappingURL=main.css.map */

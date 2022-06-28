@@ -1,0 +1,30 @@
+{
+  "name": "game-in-three-cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdirp src/sass src/",
+    "start": "browser-sync --server --files \"css/*.css\"",
+    "sass": "sass --watch sass:~/../css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcocollander/Game-in-three-cards.git"
+  },
+  "keywords": [],
+  "author": "Zenon Marek Raubuć",
+  "license": "Apache License Version 2.0, January 2004",
+  "bugs": {
+    "url": "https://github.com/marcocollander/Game-in-three-cards/issues"
+  },
+  "homepage": "https://github.com/marcocollander/Game-in-three-cards#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "mkdirp": "^1.0.4",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "sass": "^1.53.0"
+  }
+}

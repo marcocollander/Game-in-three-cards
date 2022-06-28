@@ -1,4 +1,4 @@
-@import "basic";
-@import "navigation";
-@import "header";
-@import "home";
+@forward "basic";
+@forward "navigation";
+@forward "header";
+@forward "home";
