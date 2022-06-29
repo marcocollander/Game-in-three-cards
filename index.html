@@ -29,34 +29,34 @@
     <h2 class="header__heading header__heading--small">Baw się dobrze</h2>
   </header>
 
-  <main class="game">
-    <section class="game__cards">
-      <div class="game__cards-item">
-        <img class="game__image" src="./images/diamonds-884199_640.png" alt="" width="105">
+  <main class="main">
+    <section class="cards">
+      <div class="cards__item">
+        <div class="cards__img cards__img--first"></div>
       </div>
-      <div class="game__cards-item">
-        <img class="game__image" src="./images/hearts-884201_640.png" alt="" width="105">
+      <div class="cards__item">
+        <div class="cards__img cards__img--second"></div>
       </div>
-      <div class="game__cards-item">
-        <img class="game__image" src="./images/spades-884203_640.png" alt="" width="105">
+      <div class="cards__item">
+        <div class="cards__img cards__img--third"></div>
       </div>
     </section>
 
-    <section class="game__buttons">
-      <button id="btnStart" class="game__buttons-item" type="button">Start</button>
-      <button id="btnReset" class="game__buttons-item" type="reset">Reset</button>
+    <section class="buttons">
+      <button id="btnStart" class="buttons__item" type="button">Start</button>
+      <button id="btnReset" class="buttons__item" type="reset">Reset</button>
     </section>
 
-    <form class="game__results">
+    <form class="results">
       <label for="result">Wynik: </label><br>
-      <input class="game__results-in" type="text" id="result" /><br>
+      <input class="results__in" type="text" id="result" /><br>
       <label for="quantum">Ilość prób: </label><br>
-      <input class="game__results-in" type="text" id="quantum" /><br>
-      <input class="game__results-in" type="submit" value="Wyślij" />
+      <input class="results__in" type="text" id="quantum" /><br>
+      <input class="results__in" type="submit" value="Wyślij" />
     </form>
   </main>
 
-  <script src="./app.js"></script>
+  <script src="./src/js/app.js"></script>
 </body>
 
 </html>

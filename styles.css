@@ -34,7 +34,7 @@ body {
 .card.rotated {
   transform: rotateY(180deg);
   transition: 0.3s linear;
-  background-image: url('images/card-game-48983_640.png');
+  background-image: url('src/images/images/card-game-48983_640.png');
 }
 
 .card.reverse-rotated {
@@ -71,15 +71,15 @@ body {
 }
 
 div:nth-child(1) {
-  background-image: url('images/diamonds-884199_640.png');
+  background-image: url('src/images/images/diamonds-884199_640.png');
 }
 
 div:nth-child(2) {
-  background-image: url('images/hearts-884201_640.png');
+  background-image: url('src/images/images/hearts-884201_640.png');
 }
 
 div:nth-child(3) {
-  background-image: url('images/spades-884203_640.png');
+  background-image: url('src/images/images/spades-884203_640.png');
 }
 
 section .header-section {
