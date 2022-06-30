@@ -26,41 +26,38 @@
     background-position: center;
 
     &--first {
-      background-image: url('../src/images/cards/dama-karo-small.png');
+      background-image: url('../images/cards/dama-karo-small.png');
     }
 
     &--second {
-      background-image: url('../src/images/cards/dama-pik-small.png');
+      background-image: url('../images/cards/dama-pik-small.png');
     }
 
     &--third {
-      background-image: url('../src/images/cards/dama-kier-small.png');
+      background-image: url('../images/cards/dama-kier-small.png');
     }
   }
 
 }
 
+.buttons {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
 
-
-
-  .buttons {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-
-    &__item {
-      padding: 5px 15px;
-    }
+  &__item {
+    padding: 5px 15px;
   }
+}
 
-  .results {
-    margin-top: 30px;
+.results {
+  margin-top: 30px;
 
-    &__in {
-      margin-bottom: 20px;
-    }
+  &__in {
+    margin-bottom: 20px;
   }
+}
 
 
 .rotated {

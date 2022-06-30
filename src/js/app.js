@@ -1,13 +1,13 @@
-const btnStart = document.querySelector("#btnStart");
-const btnReset = document.querySelector("#btnReset");
-const cards = document.querySelectorAll("img");
+const btnStart = document.querySelector('#btnStart');
+const btnReset = document.querySelector('#btnReset');
+const cards = document.querySelectorAll('img');
 
 console.log(cards);
 
-btnStart.addEventListener("click", () => {
+btnStart.addEventListener('click', () => {
   for (const card of cards) {
-    card.classList.add("rotated");
-    card.setAttribute("src", "./src/images/card-back.png");
+    card.classList.add('rotated');
+    card.setAttribute('src', './src/images/card-back.png');
   }
 
   // cards[0].classList.toggle('sort');
@@ -18,14 +18,14 @@ btnStart.addEventListener("click", () => {
   // btnReset.style.display = 'none';
 });
 
-btnReset.addEventListener("click", () => {
+btnReset.addEventListener('click', () => {
   for (const card of cards) {
-    card.classList.remove("rotated");
+    card.classList.remove('rotated');
     // card.setAttribute('src', './images/card-back.png');
   }
-  cards[0].setAttribute("src", "./src/images/diamonds-884199_640.png");
-  cards[1].setAttribute("src", "./src/images/hearts-884201_640.png");
-  cards[2].setAttribute("src", "./src/images/spades-884203_640.png");
+  cards[0].setAttribute('src', './src/images/diamonds-884199_640.png');
+  cards[1].setAttribute('src', './src/images/hearts-884201_640.png');
+  cards[2].setAttribute('src', './src/images/spades-884203_640.png');
 });
 
 // for (const card of cards) {
