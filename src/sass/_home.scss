@@ -1,13 +1,13 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
 }
 
 
 .cards {
+  margin-top: 50px;
   width: 100vw;
   height: 27vh;
   display: flex;
@@ -26,51 +26,76 @@
     background-position: center;
 
     &--first {
-      background-image: url('../images/cards/dama-karo-small.png');
+      background-image: url('../images/dama-karo-small.png');
     }
 
     &--second {
-      background-image: url('../images/cards/dama-pik-small.png');
+      background-image: url('../images/dama-pik-small.png');
     }
 
     &--third {
-      background-image: url('../images/cards/dama-kier-small.png');
+      background-image: url('../images/dama-kier-small.png');
     }
   }
 
 }
 
 .buttons {
+  margin-top: 50px;
   width: 60%;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
 
   &__item {
-    padding: 5px 15px;
+    padding: 5px 10px;
+
+    &:nth-child(1) {
+      margin-left: 35px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 20px;
+    }
   }
 }
 
 .results {
-  margin-top: 30px;
+  margin-top: 50px;
 
   &__in {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
-
 .rotated {
-  animation: dispay 1s;
+  animation: display 1s;
 }
+
+.rotatedBis {
+  animation: noDisplay 1s;
+}
+
 
 @keyframes display {
   from {
-    opacity: 1;
+    transform: rotateY(0);
+    opacity: 0;
   }
 
   to {
+    transform: rotateY(-180deg);
+    opacity: 1;
+  }
+}
+
+@keyframes noDisplay {
+  from {
+    transform: rotateY(-180deg);
     opacity: 0;
+  }
+
+  to {
+    transform: rotateY(0);
+    opacity: 1;
   }
 }
 

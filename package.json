@@ -7,8 +7,6 @@
         "init-project": "npm install && npm-run-all init:*",
         "init:dirs": "mkdirp dist src/sass src/css src/vendor src/images src/js",
         "init:files": "touch README.md src/index.html src/sass/style.scss src/js/script.js",
-        "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-        "init:gitignore:custom": "echo \"dist\" >> .gitignore",
         "test": "npm-run-all test:*",
         "test:html": "html-validate src/*.html",
         "test:js": "eslint src/js/",
@@ -40,8 +38,10 @@
         "onchange": "^5.2.0",
         "postcss": "^8.2.6",
         "postcss-cli": "^8.3.1",
+        "prettier": "2.7.1",
         "rimraf": "^3.0.2",
         "sass": "^1.44.0",
+        "sharp": "^0.30.7",
         "stylelint": "^9.10.1",
         "stylelint-scss": "^3.5.4"
     }

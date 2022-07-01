@@ -1,10 +1,10 @@
-const sharp = require("sharp");
+const sharp = require('sharp');
 
-sharp("dama-kier.png")
+sharp('back.png')
   .resize(220, 330)
-  .toFile("dama-kier-small.png", (err) => {
+  .toFile('back-small.png', (err) => {
     console.log(err);
   })
   .then(() => {
-    console.log("Success");
+    console.log('Success');
   });

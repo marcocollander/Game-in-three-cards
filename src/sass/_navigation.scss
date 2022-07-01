@@ -2,16 +2,51 @@
   position: relative;
 
   &__list {
+    position: absolute;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    right: 0;
     list-style: none;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #333333;
+    opacity: 0.9;
+
+    &--visible {
+      display: flex;
+    }
 
     &-link {
       text-decoration: none;
+      color: white;
+      font-size: 2.8rem;
     }
   }
 
   &__button {
     position: absolute;
     right: 0;
+    margin-right: 10px;
+    font-size: 20px;
+
+    &-bars {
+      &--visible {
+        display: none;
+      }
+    }
+
+    &-cross {
+      display: none;
+
+      &--visible {
+        display: block;
+        z-index: 1;
+      }
+    }
   }
 }
