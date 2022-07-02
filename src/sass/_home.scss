@@ -25,6 +25,10 @@
     background-size: cover;
     background-position: center;
 
+    &--active {
+      animation: pulse 1s infinite ease-in-out;
+    }
+
     &--first {
       background-image: url('../images/dama-karo-small.png');
     }
@@ -48,6 +52,10 @@
   &__item {
     padding: 5px 10px;
 
+    &--active {
+      animation: pulse 1s infinite ease-in-out;
+    }
+
     &:nth-child(1) {
       margin-left: 35px;
     }
@@ -66,36 +74,62 @@
   }
 }
 
-.rotated {
-  animation: display 1s;
+.back {
+  animation: rotateToBack 1s;
 }
 
-.rotatedBis {
-  animation: noDisplay 1s;
+.front {
+  animation: rotateToFront 1s;
+}
+
+.reset {
+  animation: rotateToStart 1s;
 }
 
 
-@keyframes display {
+@keyframes rotateToBack {
   from {
     transform: rotateY(0);
     opacity: 0;
   }
 
   to {
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
     opacity: 1;
   }
 }
 
-@keyframes noDisplay {
+@keyframes rotateToFront {
   from {
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
     opacity: 0;
   }
 
   to {
     transform: rotateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes rotateToStart {
+  from {
+    transform: rotateY(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateY(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
   }
 }
 

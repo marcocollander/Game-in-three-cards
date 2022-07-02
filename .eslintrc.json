@@ -4,31 +4,13 @@
         "node": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["plugin:prettier/recommended"],
     "parserOptions": {
         "ecmaVersion": 2015,
         "sourceType": "module"
     },
     "rules": {
-        "indent": [
-            "error",
-            2
-        ],
-        "linebreak-style": [
-            "off"
-        ],
-        "quotes": [
-            "error",
-            "single",
-            {"allowTemplateLiterals": true}
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "no-console": [
-            "off"
-        ]
+        "prettier/prettier": "error"
     },
     "globals": {
       "Handlebars": false
