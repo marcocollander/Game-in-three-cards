@@ -29,9 +29,7 @@ button.addEventListener('click', () => {
 btnStart.addEventListener('click', () => {
   if (isBtnStartActive) {
     if (!isGameOver) {
-      maxNumberOfAttempts = prompt(
-        'Wpisz ile razy chcesz zagrać, max. 20 razy'
-      );
+      maxNumberOfAttempts = prompt('Wpisz ile razy chcesz zagrać, max. 20 razy');
       isGameOver = true;
     }
 
@@ -80,28 +78,16 @@ cards.forEach((card) => {
           numberCard = Number(e.currentTarget.dataset.numberCard);
           switch (numberCard) {
             case 0:
-              document
-                .querySelector('[data-number-card="1"]')
-                .classList.add('cards__img--active');
-              document
-                .querySelector('[data-number-card="1"]')
-                .classList.remove('back');
+              document.querySelector('[data-number-card="1"]').classList.add('cards__img--active');
+              document.querySelector('[data-number-card="1"]').classList.remove('back');
               break;
             case 1:
-              document
-                .querySelector('[data-number-card="2"]')
-                .classList.add('cards__img--active');
-              document
-                .querySelector('[data-number-card="2"]')
-                .classList.remove('back');
+              document.querySelector('[data-number-card="2"]').classList.add('cards__img--active');
+              document.querySelector('[data-number-card="2"]').classList.remove('back');
               break;
             case 2:
-              document
-                .querySelector('[data-number-card="1"]')
-                .classList.add('cards__img--active');
-              document
-                .querySelector('[data-number-card="1"]')
-                .classList.remove('back');
+              document.querySelector('[data-number-card="1"]').classList.add('cards__img--active');
+              document.querySelector('[data-number-card="1"]').classList.remove('back');
               break;
           }
           cardActive = document.querySelector('.cards__img--active');
