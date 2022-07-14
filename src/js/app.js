@@ -123,8 +123,7 @@ btnReset.addEventListener('click', () => {
     btnStart.classList.add('buttons__item--active');
     result.value = results.toString();
     resultsIn.value = numberOfAttempts.toString();
-    console.log(typeof maxNumberOfAttempts);
-    console.log(typeof numberOfAttempts);
+
     if (numberOfAttempts.toString() === maxNumberOfAttempts) {
       alert('Koniec gry, zagraj ponownie');
       isGameOver = false;

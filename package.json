@@ -6,7 +6,7 @@
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp dist src/sass src/css src/images src/js",
-    "init:files": "touch README.md .gitignore src/index.html src/sass/style.scss src/js/app.js",
+    "init:files": "touch README.md .gitignore src/index.html src/sass/main.scss src/js/app.js",
     "test": "npm-run-all test:*",
     "test:html": "html-validate src/*.html",
     "test:js": "eslint src/js/",

@@ -2,46 +2,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .cards {
-  margin-top: 50px;
+  margin-top: 30px;
+  height: 27vh;
   width: 100vw;
-  height: 28vh;
   display: flex;
   justify-content: space-evenly;
 
   &__item {
-    width: 31vw;
+    width: 30vw;
     height: 100%;
   }
-;
 
   &__img {
-    border-radius: 6px;
+    border-radius: 8px;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
 
     &--active {
-      animation: pulse 1s infinite ease-in-out;
+      animation: pulseCard 1s infinite ease-in-out;
     }
 
     &--first {
-      background-image: url('../images/dama-karo-small.png');
+      background-image: url('../images/dama-karo-medium.png');
     }
 
     &--second {
-      background-image: url('../images/dama-pik-small.png');
+      background-image: url('../images/dama-pik-medium.png');
     }
 
     &--third {
-      background-image: url('../images/dama-kier-small.png');
+      background-image: url('../images/dama-kier-medium.png');
     }
   }
-
 }
 
 .buttons {
@@ -51,7 +49,7 @@
 
   &__item {
     padding: 5px 10px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
     &--active {
       animation: pulse 1s infinite ease-in-out;
@@ -68,20 +66,21 @@
 }
 
 .results {
-  margin-top: 40px;
+  margin-top: 20px;
 
   &__label {
-    font-size: 1.6rem;
+    display: block;
+    font-size: 1.4rem;
   }
 
   &__in {
-    margin-bottom: 10px;
-    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
   }
 
   &__btn {
     padding: 5px 10px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -144,61 +143,23 @@
   }
 }
 
-// MEDIA
+@keyframes pulseCard {
+  from {
+    transform: scale(1);
+  }
 
-@media (min-width: 360px) {
-  .cards {
-    height: 23vh;
-
-    &-item {
-      width: 32vw;
-    }
+  to {
+    transform: scale(1.1);
   }
 }
 
-@media (min-width: 440px) {
+@media(min-width: 412px) {
   .cards {
-
+    margin-top: 100px;
+    height: 22vh;
   }
-}
 
-
-@media (min-width: 582px) {
-  .cards {
-    margin-top: 50px;
-    width: 100vw;
-    height: 45vh;
-    display: flex;
-    justify-content: space-evenly;
-
-    &__item {
-      width: 30%;
-      height: 100%;
-    }
-
-    &__img {
-      border-radius: 6px;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-
-      &--active {
-        animation: pulse 1s infinite ease-in-out;
-      }
-
-      &--first {
-        background-image: url('../images/dama-karo-medium.png');
-      }
-
-      &--second {
-        background-image: url('../images/dama-pik-medium.png');
-      }
-
-      &--third {
-        background-image: url('../images/dama-kier-medium.png');
-      }
-    }
-
+  .buttons {
+    margin-top: 100px;
   }
 }
