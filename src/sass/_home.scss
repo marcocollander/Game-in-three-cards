@@ -2,48 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
 }
 
 .cards {
-  margin-top: 30px;
-  height: 27vh;
   width: 100vw;
+  margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
 
-  &__item {
-    width: 30vw;
-    height: 100%;
-  }
-
   &__img {
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-
-    &--active {
-      animation: pulseCard 1s infinite ease-in-out;
-    }
-
-    &--first {
-      background-image: url('../images/dama-karo-medium.png');
-    }
-
-    &--second {
-      background-image: url('../images/dama-pik-medium.png');
-    }
-
-    &--third {
-      background-image: url('../images/dama-kier-medium.png');
-    }
+    width: 100px;
   }
 }
 
 .buttons {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 60%;
   display: flex;
 
@@ -153,13 +126,47 @@
   }
 }
 
-@media(min-width: 412px) {
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
   .cards {
-    margin-top: 100px;
-    height: 22vh;
+    &__img {
+      width: 150px;
+    }
   }
+}
 
-  .buttons {
-    margin-top: 100px;
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .cards {
+    &__img {
+      width: 200px;
+    }
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .cards {
+    &__img {
+      width: 300px;
+    }
+  }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .cards {
+    &__img {
+      width: 350px;
+    }
+  }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  .cards {
+    &__img {
+      width: 400px;
+    }
   }
 }
